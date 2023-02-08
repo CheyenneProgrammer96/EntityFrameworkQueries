@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnSelectAllVendors = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnSelectAllVendors
+            // 
+            this.btnSelectAllVendors.Location = new System.Drawing.Point(121, 79);
+            this.btnSelectAllVendors.Name = "btnSelectAllVendors";
+            this.btnSelectAllVendors.Size = new System.Drawing.Size(281, 63);
+            this.btnSelectAllVendors.TabIndex = 0;
+            this.btnSelectAllVendors.Text = "Select * FROM Vendors";
+            this.btnSelectAllVendors.UseVisualStyleBackColor = true;
+            this.btnSelectAllVendors.Click += new System.EventHandler(this.btnSelectAllVendors_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(121, 170);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 46);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(121, 273);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 46);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 735);
+            this.ClientSize = new System.Drawing.Size(1458, 899);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSelectAllVendors);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,5 +76,9 @@
         }
 
         #endregion
+
+        private Button btnSelectAllVendors;
+        private Button button2;
+        private Button button3;
     }
 }
