@@ -30,7 +30,7 @@
         {
             this.btnSelectAllVendors = new System.Windows.Forms.Button();
             this.btnAllCaliVendors = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSelectSpecificColumns = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSelectAllVendors
@@ -53,21 +53,22 @@
             this.btnAllCaliVendors.UseVisualStyleBackColor = true;
             this.btnAllCaliVendors.Click += new System.EventHandler(this.btnAllCaliVendors_Click);
             // 
-            // button3
+            // btnSelectSpecificColumns
             // 
-            this.button3.Location = new System.Drawing.Point(121, 317);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 46);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSelectSpecificColumns.Location = new System.Drawing.Point(121, 317);
+            this.btnSelectSpecificColumns.Name = "btnSelectSpecificColumns";
+            this.btnSelectSpecificColumns.Size = new System.Drawing.Size(728, 67);
+            this.btnSelectSpecificColumns.TabIndex = 2;
+            this.btnSelectSpecificColumns.Text = "SELECT VendorName, VendorCity, VendorState FROM Vendors";
+            this.btnSelectSpecificColumns.UseVisualStyleBackColor = true;
+            this.btnSelectSpecificColumns.Click += new System.EventHandler(this.btnSelectSpecificColumns_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 899);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSelectSpecificColumns);
             this.Controls.Add(this.btnAllCaliVendors);
             this.Controls.Add(this.btnSelectAllVendors);
             this.Name = "Form1";
@@ -80,6 +81,6 @@
 
         private Button btnSelectAllVendors;
         private Button btnAllCaliVendors;
-        private Button button3;
+        private Button btnSelectSpecificColumns;
     }
 }
